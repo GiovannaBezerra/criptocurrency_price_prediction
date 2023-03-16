@@ -1,14 +1,30 @@
 # Cryptocurrency Get Data:
 
+# This program gets data from YAHOO! FINANCE using yfinance API (https://pypi.org/project/yfinance/). 
+# After collecting and processing data, the data set is available for creating predictions and various types of visualizations.
+
+# Historical OHLCV (Open High Low Close Volume) data are obtained:
+# 1. date: date index
+# 2. open: opening price
+# 3. high: highest price
+# 4. low: lowest price
+# 5. close: close price
+# 6. volume: trade volume
+
+# Bitcoin (BTC) is a cryptocurrency . Users are able to generate BTC through the process of mining. 
+# Bitcoin has a current supply of 19,318,681. The last known price of Bitcoin is 24,380.98905124 USD and is down -2.09 over the last 24 hours. 
+# It is currently trading on 10091 active market(s) with $42,253,128,099.70 traded over the last 24 hours. 
+# More information can be found at https://bitcoin.org/.
+
 # Import modules:
 import pandas as pd
 import yfinance as yf
 
-# Getting data from yfinance API (https://pypi.org/project/yfinance/):
+# Getting data from yfinance:
 btc = yf.Ticker('BTC-USD')
 
 # Creating history price data frame since 2021:
-df_btc = btc.history(start="2021-01-01")
+df_btc = btc.history(start="2021-01-01",actions=False)
 
 # Adding column with date information and reset index:
 df_btc['date'] = df_btc.index
@@ -18,7 +34,7 @@ df_btc.reset_index(drop=True, inplace=True)
 df_btc.rename(columns= str.lower, inplace = True)
 
 # Rearranging columns order:
-df_btc = df_btc[['date','open', 'high', 'low', 'close', 'volume', 'dividends', 'stock splits']]
+df_btc = df_btc[['date','open', 'high', 'low', 'close', 'volume']]
 
 # Date converting type:
 df_btc.date = pd.to_datetime(df_btc.date)
