@@ -11,11 +11,6 @@
 # 5. close: close price
 # 6. volume: trade volume
 
-# Bitcoin (BTC) is a cryptocurrency . Users are able to generate BTC through the process of mining. 
-# Bitcoin has a current supply of 19,318,681. The last known price of Bitcoin is 24,380.98905124 USD and is down -2.09 over the last 24 hours. 
-# It is currently trading on 10091 active market(s) with $42,253,128,099.70 traded over the last 24 hours. 
-# More information can be found at https://bitcoin.org/.
-
 # Import modules:
 import pandas as pd
 import yfinance as yf
@@ -24,7 +19,7 @@ import yfinance as yf
 btc = yf.Ticker('BTC-USD')
 
 # Creating history price data frame since 2021:
-df_btc = btc.history(start="2021-01-01",actions=False)
+df_btc = btc.history(start='2021-01-01',actions=False)
 
 # Adding column with date information and reset index:
 df_btc['date'] = df_btc.index
@@ -50,6 +45,8 @@ print('There are {} missing values on Data frame'.format(missing_values))
 
 # Printting df shape:
 print('Data frame shape: {}'.format(df_btc.shape))
+
+print('Data frame extraction from {:%Y-%m-%d} to {:%Y-%m-%d}'.format(df_btc.date.min(),df_btc.date.max()))
 
 # Printting result of running the program:
 print('cryptocurrency_get_data successfully run')
