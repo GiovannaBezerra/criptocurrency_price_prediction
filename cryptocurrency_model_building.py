@@ -5,7 +5,7 @@
 # time series models using a single line of code. 
 # Source: https://www.analyticsvidhya.com/blog/2021/04/automate-time-series-forecasting-using-auto-ts/
 
-# The data was splited into train and test (considering 80:20 ratio). 
+# The data was splited into train and test (considering 90:10 ratio). 
 # To simplify the model, was considered historical prices from YFinance since 2021.
 
 # Import modules:
@@ -23,9 +23,9 @@ df = df_btc[["date", "close"]]
 # Sortting values by date:
 df = df.sort_values('date')
 
-# Using ratio 80:20 to split test and train data. It means 80% of the data for training and 20% for test:
-count_lines = df.shape[0]
-limit = int(count_lines*0.8)
+# Using ratio 90:10 to split test and train data. It means 90% of the data for training and 10% for test:
+count_lines = len(df.index)
+limit = int(count_lines*0.9)
 
 # Splitting train-test dataset:
 train = df.iloc[:limit]
@@ -34,7 +34,7 @@ test = df.iloc[limit:]
 ### Building the model:
 
 # Setting model parameters: 
-model = AutoTS(forecast_length=test.shape[0],frequency='infer', ensemble='simple')
+model = AutoTS(forecast_length=int(len(test.index)),frequency='infer', ensemble='simple')
 
 # Fitting model:
 model = model.fit(train, date_col='date', value_col='close', id_col=None)
