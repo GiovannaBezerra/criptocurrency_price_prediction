@@ -31,8 +31,9 @@ df_btc.rename(columns= str.lower, inplace = True)
 # Rearranging columns order:
 df_btc = df_btc[['date','open', 'high', 'low', 'close', 'volume']]
 
-# Date converting type:
+# Date converting type and remove timezone:
 df_btc.date = pd.to_datetime(df_btc.date)
+df_btc.loc[:, 'date'] = df_btc['date'].dt.tz_localize(None)
 
 # Checking missing values:
 missing_values=0
