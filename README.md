@@ -1,12 +1,11 @@
-<img src="https://user-images.githubusercontent.com/44107852/233246187-09395c70-4819-48d5-bcd2-e579bf3f2713.jpg" align="right"
-      width="70" height="70">
+<img src="https://user-images.githubusercontent.com/44107852/233505500-e03ec5b7-920d-4fdd-872a-31ebcf295ca4.png" align="right"
+      width="90" height="90">
       
 # Cryptocurrency Price Prediction with AUTO TS
----
 
-This program aims to develop a machine learning model to predict Bitcoin prices using AUTO TS.
+### This program aims to develop a machine learning model to predict Bitcoin prices using AUTO TS.
 
-![candlestick_graph](https://user-images.githubusercontent.com/44107852/233241951-b041b3e9-12a2-454f-9d11-8ac64978f66e.jpg)
+![candlestick_graph](https://user-images.githubusercontent.com/44107852/233504877-c678f7a7-a469-4107-aa42-3b40a1b591b3.jpg)
 
 ><img src="https://user-images.githubusercontent.com/44107852/232332112-330712e3-4ed0-4703-a88e-4fc4edbe68db.png" 
 align="left" alt="imdb logo" width="20" height="20">
@@ -14,9 +13,9 @@ align="left" alt="imdb logo" width="20" height="20">
 
 ## Table Of Content  
 
-[1. Problem understanding](#1problem-understanding)  
+[1. Problem understanding](#problem-understanding)  
 [2. How to use](#how-to-use)  
-[3. Development steps](#development-steps)
+[3. Development steps](#development-steps)    
 [4. Results](#results)  
 [5. Notes and Considerations](#notes-and-considerations)  
 
