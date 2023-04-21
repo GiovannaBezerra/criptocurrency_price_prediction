@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/44107852/233505500-e03ec5b7-920d-4fdd-872a-31ebcf295ca4.png" align="right"
+<img src="https://user-images.githubusercontent.com/44107852/233521994-973b8bb0-7973-4eda-b5ef-78dc5cc2414a.png" align="right"
       width="70" height="70">
       
 # Cryptocurrency Price Prediction with AUTO TS
@@ -23,7 +23,7 @@ align="left" alt="imdb logo" width="20" height="20">
 
 ## 1. Problem understanding  
 
-Cryptocurrency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority. [source](https://www.google.com/search?q=what+is+cryptocurrency&rlz=1C1GCEA_enBR960BR960&oq=what+is+crypt&aqs=chrome.2.0i512j69i57j0i512l4j0i22i30l4.4489j0j7&sourceid=chrome&ie=UTF-8). In recent years, cryptocurrency trading has become more and more popular and can be considered a good way to invest because it offers great returns even in a short period.   
+Cryptocurrency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority. In recent years, cryptocurrency trading has become more and more popular and can be considered a good way to invest because it offers great returns even in a short period.   
 
 This work proposal is based on extracting meaningful patterns and attributes from historical cryptocurrency data to predict future prices using machine learning for time series. A time serie is a sequence of data points that occur in successive order over time.   
 
@@ -69,15 +69,15 @@ In the first step, historical Bitcoin prices were collected from [YAHOO! FINANCE
 
 To build the model were used historical prices of the last 60 days and the data set were splitted into training and testing considering the proportion of 90:10, that is, 90% of the data for training and 10% for testing.
 
-![train-test](https://user-images.githubusercontent.com/44107852/233241994-254f8f18-25fa-4d16-9f1a-02e6fe7d3969.jpg)
+![train-test](https://user-images.githubusercontent.com/44107852/233522145-7cdaaf11-9823-4406-b4a3-c5288c8d8350.jpg)
 
 The model building parameters were defined in the second stage. For this analysis the **AUTO TS** library was used. AUTO TS is a complex model building utility for time series data. Since it automates many Tasks involved in a complex endeavor, it assumes many intelligent defaults. AUTO TS will automatically select the best model which gives best score specified. [See more](https://pypi.org/project/auto-ts/). 
 
 Lastly, the results can be compared on the model evaluation step. To evaluate the model training results, the Root Mean Square Error (RMSE) was used. The best model obtained was AUTO_SARIMAX with 1,106.92 for RMSE score.
 
-![training-result](https://user-images.githubusercontent.com/44107852/233242042-2c52900a-8786-40f1-a06c-2507f9d6ebf5.jpg)
+![training-result](https://user-images.githubusercontent.com/44107852/233522180-d3b92ac4-9369-43c2-b65d-d88490dcfd1e.jpg)
 
-The model performance with test dataset was calculated comparing the test dataset (previously separated) and model predictions for the same period. In this case, 277.09 was obtained for the RMSE score, which means that the prediction can be wrong by an average of USD 277.09 (plus or minus). In relative terms, the model achieved 0.75% of MAPE score (mean absolute percentage difference between the actual and the predicted value).
+The model performance with test dataset was calculated comparing the test dataset (previously separated) and model predictions for the same period. In this case, 277.09 was obtained for the RMSE score, which means that the prediction can be wrong by an average of USD 277.09 (plus or minus). In relative terms, the model achieved 0.75% of MAPE score - mean absolute percentage difference between the actual and the predicted value.
 
 
 ## 4. Results 
