@@ -14,14 +14,14 @@ align="left" alt="imdb logo" width="20" height="20">
 
 ## Table Of Content  
 
-[1. Problem understanding](#1.-problem-understanding)  
-[2. How to use](#2.-how-to-use)  
-[3. Development steps](#3.-development-steps)    
-[4. Results](#4.-results)  
-[5. Notes and Considerations](#5.-notes-and-considerations)  
+- [Problem understanding](#problem-understanding)  
+- [How to use](#how-to-use)  
+- [Development steps](#development-steps)    
+- [Results](#results)  
+- [Notes and Considerations](#notes-and-considerations)  
 
 
-## 1. Problem understanding  
+## Problem understanding  
 
 Cryptocurrency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority. In recent years, cryptocurrency trading has become more and more popular and can be considered a good way to invest because it offers great returns even in a short period.   
 
@@ -29,7 +29,7 @@ This work proposal is based on extracting meaningful patterns and attributes fro
 
 For this program we will use **Bitcoin**. Founded in 2009, it was the first cryptocurrency and remains one of the most popular today. More information can be found at https://bitcoin.org/.
 
-## 2. How to use  
+## How to use  
 
 ### Installation and configuration 
 
@@ -58,7 +58,7 @@ For Windows users, it is recommended to see the installation instructions in the
 
 After cloning the repository, two files must be saved: [cryptocurrency_getdata.py](https://github.com/GiovannaBezerra/cryptocurrency_price_prediction/blob/main/cryptocurrency_get_data.py), wich contains the source code to get data and [cryptocurrency_price_prediction.ipynb](https://github.com/GiovannaBezerra/cryptocurrency_price_prediction/blob/main/cryptocurrency_price_prediction.ipynb) which contains the data analysis on jupyter notebook.
 
-## 3. Development steps
+## Development steps
 
 The work was divided into three main steps:   
 > 1. Colect and process data
@@ -80,7 +80,7 @@ Lastly, the results can be compared on the model evaluation step. To evaluate th
 The model performance with test dataset was calculated comparing the test dataset (previously separated) and model predictions for the same period. In this case, 277.09 was obtained for the RMSE score, which means that the prediction can be wrong by an average of USD 277.09 (plus or minus). In relative terms, the model achieved 0.75% of MAPE score - mean absolute percentage difference between the actual and the predicted value.
 
 
-## 4. Results 
+## Results 
 
 In summary, the model that obtained the best performance - lowest RMSE- was **AUTO_SARIMAX**. This model is able to predict prices for the next 8 days with **277.09 for RMSE score** (average distance between the predicted and the actual values) and **0.75% for MAPE score** (mean of all absolute percentage errors between the predicted and actual values), considering evaluation with test data.
 
@@ -89,7 +89,7 @@ In summary, the model that obtained the best performance - lowest RMSE- was **AU
 From the image above, the blue line shows the actual values, using for model training and validation. The red dotted line shows the values using for test and the orange line shows forecast values.
 
 
-## 4. Notes and Considerations  
+## Notes and Considerations  
 
 It is important to emphasize again that buying and selling trends depend on many factors and the model obtained is only capable of working with historical data.
 
@@ -102,4 +102,4 @@ This project was really challenging for me. I had the opportunity to learn more 
 <https://thecleverprogrammer.com/2021/12/27/cryptocurrency-price-prediction-with-machine-learning/>  
 <https://www.analyticsvidhya.com/blog/2021/04/automate-time-series-forecasting-using-auto-ts/>  
 <https://www.section.io/engineering-education/time-series-analysis-and-forecasting-using-auto-time-series/>   
-https://www.google.com/search?q=what+is+cryptocurrency&rlz=1C1GCEA_enBR960BR960&oq=what+is+crypt&aqs=chrome.2.0i512j69i57j0i512l4j0i22i30l4.4489j0j7&sourceid=chrome&ie=UTF-8
+[What is cryptocurrency?](https://www.google.com/search?q=what+is+cryptocurrency&rlz=1C1GCEA_enBR960BR960&oq=what+is+crypt&aqs=chrome.2.0i512j69i57j0i512l4j0i22i30l4.4489j0j7&sourceid=chrome&ie=UTF-8)
