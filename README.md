@@ -23,11 +23,11 @@ align="left" alt="imdb logo" width="20" height="20">
 
 ## Problem understanding  
 
-Cryptocurrency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority. In recent years, cryptocurrency trading has become more and more popular and can be considered a good way to invest because it offers great returns even in a short period.   
+Cryptocurrency is a digital currency in which transactions are verified and records maintained by a decentralized system using cryptography, rather than by a centralized authority. In recent years, cryptocurrency trading has become more and more popular and can be considered a good option to invest because it offers great returns even in a short period.   
 
 This work proposal is based on extracting meaningful patterns and attributes from historical cryptocurrency data to predict future prices using machine learning for time series. A time serie is a sequence of data points that occur in successive order over time.   
 
-For this program we will use **Bitcoin**. Founded in 2009, it was the first cryptocurrency and remains one of the most popular today. More information can be found at https://bitcoin.org/.
+For this program we will use **Bitcoin**, the first cryptocurrency founded in 2009, and still remaining one of the most popular today. More information can be found at https://bitcoin.org/.
 
 ## How to use  
 
