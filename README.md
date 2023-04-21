@@ -102,3 +102,4 @@ This project was really challenging for me. I had the opportunity to learn more 
 <https://thecleverprogrammer.com/2021/12/27/cryptocurrency-price-prediction-with-machine-learning/>  
 <https://www.analyticsvidhya.com/blog/2021/04/automate-time-series-forecasting-using-auto-ts/>  
 <https://www.section.io/engineering-education/time-series-analysis-and-forecasting-using-auto-time-series/>   
+https://www.google.com/search?q=what+is+cryptocurrency&rlz=1C1GCEA_enBR960BR960&oq=what+is+crypt&aqs=chrome.2.0i512j69i57j0i512l4j0i22i30l4.4489j0j7&sourceid=chrome&ie=UTF-8
